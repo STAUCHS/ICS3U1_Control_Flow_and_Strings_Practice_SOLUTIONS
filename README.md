@@ -248,7 +248,7 @@ xxbreadyy
 
 ## Section D - Formatted tables
 
-### GramsToPounds.java
+### D1GramsToPounds.java
 Write a program that outputs a formatted table that shows a conversion from grams to pounds from 100 to 1000 grams.  
 * The table should display for every 100 grams.
 * The pounds values must be calculated.
