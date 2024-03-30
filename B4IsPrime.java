@@ -18,9 +18,14 @@ class B4IsPrime extends ConsoleProgram {
     // Set initial values
     intCounter = 0;
     intDivisor = 2;
-
+    
+    // Case #1: 0 and 1 not prime numbers
+    if (intNum == 0 || intNum == 1) {
+      System.out.println(intNum + " is neither prime nor composite.");
+    }
+    
     // Loop through all divisors between 2 and intNum
-    while (intCounter == 0 && intDivisor < intNum) {
+    while (intCounter == 0 && intDivisor <= intNum/2) {
       // Checks if intNum is divisible by any intDivisor
       if (intNum % intDivisor == 0) {
         intCounter++;
@@ -31,8 +36,8 @@ class B4IsPrime extends ConsoleProgram {
       intDivisor++;
     }
     
-    // If no divisors, output prime number
-    if (intCounter == 0) {
+    // If no divisors and not equal to 0 or 1, output prime number
+    if (intCounter == 0 && intNum != 0 && intNum != 1) {
       System.out.println(intNum + " is a prime number.");
     }
 

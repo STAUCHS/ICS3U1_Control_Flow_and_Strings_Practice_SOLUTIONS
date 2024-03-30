@@ -8,17 +8,21 @@ class C2EveryNth extends ConsoleProgram {
   public void run() {
     
     // Declare variables
-    String strWord;
-    int intNthChar;
+    String strWord;    
     String strNewWord;
+    int intNthChar;
+    int intLength;
     
     // Get word from user
     strWord = readLine("Enter a word: ");
     intNthChar = readInt("Enter an integer: ");
+
+    // Initialize varaibles
+    intLength = strWord.length();
     strNewWord = "";
 
-    for (int counter = 0; counter <= strWord.length(); counter += intNthChar) {
-      strNewWord += strWord.charAt(counter);
+    for (int i = 0; i <= intLength; i += intNthChar) {
+      strNewWord += strWord.charAt(i);
     }
 
     System.out.println(strNewWord);

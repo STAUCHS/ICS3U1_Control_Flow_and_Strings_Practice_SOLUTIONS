@@ -136,25 +136,17 @@ Write a program that lets you simulate the rolling of 100 pairs of dice.  For ea
 
 ### B2GuessingGame.java
 
-Write a program GuessingGAME that lets the computer generate a secret number (an integer between 1 and 100, for your friend to guess.   If they guess too high, print: "too high, guess again." If they guess too low, print: "too low, guess again".   If they guess the number, let the program stop and print "congratulations".  If they've guessed incorrectly after 5 attempts, print "Nice Try"
+Write a program GuessingGAME that lets the computer generate a secret number, an integer between 1 and 100, for your friend to guess. If they guess too high, print: "Too high, guess again." If they guess too low, print: "Too low, guess again". If they guess the number, let the program stop and print "Congratulations".  If they've guessed incorrectly after 5 attempts, print "Nice Try".
 
 
 ### B3DivisorCount.java
 
-Write a program DivisorCount that lets you enter an integer and that prints all the divisors of that
-
-number. Note that d is a divisor of n if n%d=0
+Write a program DivisorCount that lets you enter an integer and that prints all the divisors of that number. Note that d is a divisor of n if n % d = 0.
 
 
 ### B4IsPrime.java
 
-Write a program that lets you enter an integer, and that will print appropriately "is a
-
-prime number" or "is a composite number". A number n is a prime number, if it
-
-has no divisors d, where ![](CodeCogsEqn.gif)
-
-or more conveniently, where ![](CodeCogsEqn2.gif)
+Write a program that lets you enter an integer, and that will print appropriately "is a prime number" or "is a composite number". A number n is a prime number, if it has no divisors d. A prime number is only be divisible by 1 and itself.
 
 
 ## Section C - Strings (Choose 2)
@@ -168,10 +160,10 @@ Given a string, take the last character and print a new string with the last cha
 ### C2EveryNth.java
 
 
-```
 Given a non-empty string and an int N, return the string made starting with character 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
 
-Sample Run 1
+#### Sample Run 1
+```
 Miracle
 2
 Mrce
@@ -180,38 +172,37 @@ Mrce
 
 
 #### Sample Run 2
-
+```
 abcdefg
-
 2
-
 aceg
-
+```
 
 #### Sample Run 3
-
+```
 abcdefg
-
 3
-
 adg
-
+```
 
 ### C3MiddleAbc.java
 
-
-```
 Given a string, does "abc" appear in the middle of the string? To define middle, we'll say that the number of characters to the left and right of the "abc" must differ by at most one.
 
-Sample Run 1
+#### Sample Run 1
+```
 AAabcBB
 true
+```
 
-Sample Run 2
+#### Sample Run 2
+```
 AabcBB
 true
+```
 
-Sample Run 3
+#### Sample Run 3
+```
 AabcBBB
 false
 ```
@@ -224,18 +215,12 @@ A sandwich is two pieces of bread with something in between. Return the string t
 
 
 #### Sample Run 1
-
-
 ```
 breadjambread
 jam
 ```
 
-
-
 #### Sample Run 2
-
-
 ```
 xxbreadjambreadyy
 jam
@@ -270,4 +255,3 @@ Write a program that outputs a formatted table that shows a conversion from gram
    900     1.9842
   1000     2.2046
 ```
-
